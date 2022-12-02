@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Notes from "./pages/Notes"
+import React from 'react'
+import Sidebar from './pages/Sidebar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+    <main className="py-3">
+      <container>
+        <h1>Welcome</h1>
+        <Notes className="row"/>
+        <Sidebar/>
+      </container>
+    </main>
     </div>
   );
 }
